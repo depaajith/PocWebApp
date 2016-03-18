@@ -13,14 +13,10 @@ import com.animus.poc.repositories.ProspectRepository;
 @ContextConfiguration(locations = {"/test-applicationContext.xml"})
 public class ProspectTest {
     
-	@Autowired
-	private ProspectRepository prospectRepository;
-	
+
 	@Test
 	public void testProspect(){
-		Prospect prospect = prospectRepository.findOne(2l);
-		System.out.println("------------------------------>" + prospect.getFirstname() + " " + prospect.getLastname());
-		
+
 	}
 	
 	
